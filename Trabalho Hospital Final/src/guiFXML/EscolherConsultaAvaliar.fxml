@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #D2E0FB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.EscolherConsultaAvaliarController">
+   <children>
+      <ChoiceBox fx:id="choiceBoxConsultas" layoutX="175.0" layoutY="279.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Button fx:id="botaoEscolha" layoutX="212.0" layoutY="337.0" mnemonicParsing="false" onAction="#cliqueBotaoEscolha" style="-fx-background-color: #39A7FF;" text="ESCOLHER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="105.0" fitWidth="510.0" layoutX="-2.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Consultas%20(4).png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="74.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para que continuemos melhorando nosso desempenho, contamos com sua avaliação!" wrappingWidth="385.4687805175781">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="74.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escolha abaixo sua consulta e nos avalie:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#124991" layoutX="221.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consulta">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="89.0" fitWidth="105.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="125.0" layoutX="125.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/clinica.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="398.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/avaliar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

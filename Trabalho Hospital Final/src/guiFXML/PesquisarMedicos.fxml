@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="600.0" style="-fx-background-color: #D2E0FB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.PesquisarMedicosController">
+   <children>
+      <TextField fx:id="textFieldDado" layoutX="225.0" layoutY="231.0" promptText="Nome ou Especialidade" />
+      <Button fx:id="botaoPesquisar" layoutX="482.0" layoutY="344.0" mnemonicParsing="false" onAction="#procurarMedicos" style="-fx-background-color: #39A7FF;" text="BUSCAR" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ChoiceBox fx:id="choiceBoxEscolha" layoutX="22.0" layoutY="231.0" prefWidth="150.0" />
+      <ListView fx:id="listViewResultados" layoutX="163.0" layoutY="292.0" prefHeight="259.0" prefWidth="274.0" />
+      <ImageView fitHeight="130.0" fitWidth="168.0" layoutX="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/nomelogo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="227.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite aqui:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar por:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#124991" layoutX="13.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para pesquisar um médico por nome ou por especialidade, preencha os campos abaixo:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

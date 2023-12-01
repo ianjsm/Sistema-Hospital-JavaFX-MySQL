@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="600.0" style="-fx-background-color: #D2E0FB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.EditarPacienteController">
+   <children>
+      <RadioButton fx:id="radioButtonNome" layoutX="360.0" layoutY="208.0" mnemonicParsing="false" text="Nome">
+         <font>
+            <Font size="13.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radioButtonIdade" layoutX="360.0" layoutY="237.0" mnemonicParsing="false" text="Idade">
+         <font>
+            <Font size="13.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radioButtonPlano" layoutX="360.0" layoutY="266.0" mnemonicParsing="false" text="Plano de Saúde">
+         <font>
+            <Font size="13.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radioButtonSenha" layoutX="360.0" layoutY="325.0" mnemonicParsing="false" text="Senha">
+         <font>
+            <Font size="13.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radioButtonCPF" layoutX="360.0" layoutY="296.0" mnemonicParsing="false" text="CPF">
+         <font>
+            <Font size="13.0" />
+         </font></RadioButton>
+      <TextField fx:id="textFieldEditar" layoutX="121.0" layoutY="263.0" />
+      <Button fx:id="botaoEditar" layoutX="272.0" layoutY="406.0" mnemonicParsing="false" onAction="#editarDado" style="-fx-background-color: #39A7FF;" text="EDITAR" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="labelMensagem" layoutX="261.0" layoutY="248.0" />
+      <Text fill="#124991" layoutX="123.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o novo dado:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#124991" layoutX="360.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qual campo deseja editar?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#124991" layoutX="213.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editar Dados Paciente">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="26.0" fitWidth="150.0" layoutX="126.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/clinica.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="113.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

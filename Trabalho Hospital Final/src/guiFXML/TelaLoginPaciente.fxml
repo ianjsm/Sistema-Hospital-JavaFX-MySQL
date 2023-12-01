@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="430.0" style="-fx-background-color: #D2E0FB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.TelaLoginPacienteController">
+   <children>
+      <TextField fx:id="textFieldUsuario" layoutX="140.0" layoutY="215.0" promptText="CPF" />
+      <Button fx:id="botaoLogin" layoutX="186.0" layoutY="299.0" mnemonicParsing="false" onAction="#fazerLogin" style="-fx-background-color: #39A7FF;" text="Entrar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <PasswordField fx:id="textFieldSenha" layoutX="140.0" layoutY="248.0" promptText="Senha" />
+      <Label fx:id="labelCliqueCadastro" layoutX="252.0" layoutY="348.0" onMouseClicked="#cliqueBotaoCadastrarPaciente" text="Cadastre-se" textFill="#124991" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fill="#124991" layoutX="14.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para fazer login como paciente, preencha os campos abaixo:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="102.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Não possui uma conta?">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <ImageView fitHeight="123.0" fitWidth="167.0" layoutX="132.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/nomelogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
