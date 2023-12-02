@@ -38,7 +38,7 @@ public class RealizarConsultaController {
 
 		String planoDoPaciente = null;
 
-		String selectQuery = "SELECT plano FROM pacientes WHERE cpf_paciente = ? ";
+		String selectQuery = "SELECT plano FROM pacientes WHERE cpf = ? ";
 		try (Connection connection = DriverManager.getConnection(url, username, password);
 				PreparedStatement preparedStatement = connection.prepareStatement(selectQuery)) {
 
@@ -70,7 +70,7 @@ public class RealizarConsultaController {
 
 		String planoPaciente = null;
 
-		String selectQuery = "SELECT plano FROM pacientes WHERE cpf_paciente = ? ";
+		String selectQuery = "SELECT plano FROM pacientes WHERE cpf = ? ";
 		try (Connection connection = DriverManager.getConnection(url, username, password);
 				PreparedStatement preparedStatement = connection.prepareStatement(selectQuery)) {
 

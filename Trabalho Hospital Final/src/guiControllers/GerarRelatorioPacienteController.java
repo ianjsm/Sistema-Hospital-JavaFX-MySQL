@@ -64,6 +64,7 @@ public class GerarRelatorioPacienteController {
 
 	@FXML
 	public void cliqueBotaoGerarRelatorio() {
+		lista.clear();
 		LocalDate periodoInicio = datePickerInicio.getValue();
 		LocalDate periodoFinal = datePickerFinal.getValue();
 		Date inicio = java.sql.Date.valueOf(periodoInicio);

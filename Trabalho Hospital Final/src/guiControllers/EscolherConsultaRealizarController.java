@@ -44,7 +44,6 @@ public class EscolherConsultaRealizarController {
 			try (ResultSet resultSet = preparedStatement.executeQuery()) {
 				while (resultSet.next()) {
 					String cpfPaciente = resultSet.getString("cpf_paciente");
-					cpfPacienteDaConsulta = cpfPaciente;
 					idConsultaEscolhida = resultSet.getInt("idConsulta");
 					String data = resultSet.getString("dataConsulta");
 					dataEscolhida = resultSet.getDate("dataConsulta");
@@ -61,7 +60,20 @@ public class EscolherConsultaRealizarController {
 	}
 
 	public void cliqueBotaoEscolha() {
+		String consultaEscolhida = choiceBoxConsultas.getSelectionModel().getSelectedItem();
+        String[] parts = consultaEscolhida.split(" - ");
+
+        if (parts.length == 2) {
+            String cpf = parts[0].replace("CPF do paciente: ", "");
+            String data = parts[1];
+            System.out.println("CPF: " + cpf);
+            System.out.println("Data: " + data);
+
+            cpfPacienteDaConsulta = cpf;
+        }
+        
 		System.out.println(idConsultaEscolhida);
+		System.out.println(cpfPacienteDaConsulta);
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/guiFXML/RealizarConsulta.fxml"));
 			Parent root = loader.load();

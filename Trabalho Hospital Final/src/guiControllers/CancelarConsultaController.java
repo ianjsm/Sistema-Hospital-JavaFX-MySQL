@@ -129,25 +129,51 @@ public class CancelarConsultaController {
 			e.getMessage();
 		}
 
-		String updateQuery = "UPDATE consultas SET cpf_paciente = ? WHERE idConsulta = ?";
-		try (Connection connection = DriverManager.getConnection(url, username, password);
-				PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
+		if (cpf_paciente_espera == null) {
+			String updateQuery = "UPDATE consultas SET crm_Medico = ?, cpf_paciente = ?, dataConsulta = ?, realizada = ? WHERE idConsulta = ?";
+			try (Connection connection = DriverManager.getConnection(url, username, password);
+					PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
 
-			preparedStatement.setString(1, cpf_paciente_espera);
-			preparedStatement.setInt(2, numConsultaDesmarcada);
+				preparedStatement.setString(1, null);
+				preparedStatement.setString(2, cpf_paciente_espera);
+				preparedStatement.setDate(3, null);
+				preparedStatement.setString(4, null);
+				preparedStatement.setInt(5, numConsultaDesmarcada);
 
-			int rowsAffected2 = preparedStatement.executeUpdate();
+				int rowsAffected2 = preparedStatement.executeUpdate();
 
-			if (rowsAffected2 > 0) {
-				labelMensagem.setText("Consulta desmarcada com sucesso!");
-				System.out.println("UPDATE SIMMMMMMMMM RELAIAOD");
-			} else {
-				labelMensagem.setText("Não foi possível desmarcar a consulta. Tente novamente");
-				System.out.println("UPDATE NAAAAAAAO REALIADO");
+				if (rowsAffected2 > 0) {
+					labelMensagem.setText("Consulta desmarcada com sucesso!");
+					System.out.println("UPDATE SIMMMMMMMMM RELAIAOD");
+				} else {
+					labelMensagem.setText("Não foi possível desmarcar a consulta. Tente novamente");
+					System.out.println("UPDATE NAAAAAAAO REALIADO");
+				}
+
+			} catch (SQLException e) {
+				e.printStackTrace();
 			}
+		} else {
+			String updateQuery = "UPDATE consultas SET cpf_paciente = ? WHERE idConsulta = ?";
+			try (Connection connection = DriverManager.getConnection(url, username, password);
+					PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
 
-		} catch (SQLException e) {
-			e.printStackTrace();
+				preparedStatement.setString(1, cpf_paciente_espera);
+				preparedStatement.setInt(2, numConsultaDesmarcada);
+
+				int rowsAffected2 = preparedStatement.executeUpdate();
+
+				if (rowsAffected2 > 0) {
+					labelMensagem.setText("Consulta desmarcada com sucesso!");
+					System.out.println("UPDATE SIMMMMMMMMM RELAIAOD");
+				} else {
+					labelMensagem.setText("Não foi possível desmarcar a consulta. Tente novamente");
+					System.out.println("UPDATE NAAAAAAAO REALIADO");
+				}
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
