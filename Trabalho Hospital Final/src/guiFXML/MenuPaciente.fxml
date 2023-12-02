@@ -7,44 +7,50 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="664.0" style="-fx-background-color: #D2E0FB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.MenuPacienteController">
-   <children>
-      <Button fx:id="botaoAgendarConsulta" layoutX="353.0" layoutY="164.0" mnemonicParsing="false" onAction="#cliqueBotaoAgendarConsulta" style="-fx-background-color: #39A7FF;" text="AGENDAR CONSULTA" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="botaoCancelarConsulta" layoutX="351.0" layoutY="215.0" mnemonicParsing="false" onAction="#cliqueBotaoCancelarConsulta" style="-fx-background-color: #39A7FF;" text="CANCELAR CONSULTA" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="botaoEditarDados" layoutX="369.0" layoutY="423.0" mnemonicParsing="false" onAction="#cliqueBotaoEditarDados" style="-fx-background-color: #39A7FF;" text="EDITAR DADOS" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="botaoPesquisarMedicos" layoutX="357.0" layoutY="318.0" mnemonicParsing="false" onAction="#cliqueBotaoPesquisarMedicos" style="-fx-background-color: #39A7FF;" text="PESQUISAR MÉDICO" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="botaoGerarRelatorios" layoutX="360.0" layoutY="266.0" mnemonicParsing="false" onAction="#botaoGerarRelatoriosPaciente" style="-fx-background-color: #39A7FF;" text="GERAR RELATÓRIO" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="botaoAvaliarConsulta" layoutX="363.0" layoutY="372.0" mnemonicParsing="false" onAction="#cliqueBotaoAvaliarConsulta" style="-fx-background-color: #39A7FF;" text="AVALIAR MÉDICO" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <AnchorPane prefHeight="480.0" prefWidth="190.0">
-         <children>
-            <ImageView fitHeight="483.0" fitWidth="190.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../Downloads/Texto%20do%20seu%20parágrafo%20(3).png" />
-               </image>
-            </ImageView>
-         </children>
-      </AnchorPane>
-      <ImageView fitHeight="136.0" fitWidth="177.0" layoutX="331.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/nomelogo.png" />
-         </image>
-      </ImageView>
-   </children>
+	<children>
+		<Button fx:id="botaoAgendarConsulta" layoutX="353.0" layoutY="164.0" mnemonicParsing="false" onAction="#cliqueBotaoAgendarConsulta" style="-fx-background-color: #39A7FF;" text="AGENDAR CONSULTA" textFill="WHITE">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="botaoCancelarConsulta" layoutX="351.0" layoutY="215.0" mnemonicParsing="false" onAction="#cliqueBotaoCancelarConsulta" style="-fx-background-color: #39A7FF;" text="CANCELAR CONSULTA" textFill="WHITE">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="botaoEditarDados" layoutX="369.0" layoutY="423.0" mnemonicParsing="false" onAction="#cliqueBotaoEditarDados" style="-fx-background-color: #39A7FF;" text="EDITAR DADOS" textFill="WHITE">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="botaoPesquisarMedicos" layoutX="357.0" layoutY="318.0" mnemonicParsing="false" onAction="#cliqueBotaoPesquisarMedicos" style="-fx-background-color: #39A7FF;" text="PESQUISAR MÉDICO" textFill="WHITE">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="botaoGerarRelatorios" layoutX="360.0" layoutY="266.0" mnemonicParsing="false" onAction="#botaoGerarRelatoriosPaciente" style="-fx-background-color: #39A7FF;" text="GERAR RELATÓRIO" textFill="WHITE">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="botaoAvaliarConsulta" layoutX="363.0" layoutY="372.0" mnemonicParsing="false" onAction="#cliqueBotaoAvaliarConsulta" style="-fx-background-color: #39A7FF;" text="AVALIAR MÉDICO" textFill="WHITE">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<AnchorPane prefHeight="480.0" prefWidth="190.0">
+			<children>
+				<ImageView fitHeight="483.0" fitWidth="190.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Downloads/Texto%20do%20seu%20parágrafo%20(3).png" />
+					</image>
+				</ImageView>
+			</children>
+		</AnchorPane>
+		<ImageView fitHeight="136.0" fitWidth="177.0" layoutX="331.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/nomelogo.png" />
+			</image>
+		</ImageView>
+	</children>
 </AnchorPane>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -8,34 +9,42 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="474.0" prefWidth="434.0" style="-fx-background-color: #D2E0FB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.MenuPrincipalController">
-   <children>
-      <Button fx:id="botaoLoginMedico" layoutX="194.0" layoutY="365.0" mnemonicParsing="false" onAction="#cliqueBotaoLoginMedico" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #39A7FF;" text="Médico" textFill="WHITE">
-         <font>
-            <Font size="13.0" />
-         </font></Button>
-      <Button fx:id="botaoLoginPaciente" layoutX="190.0" layoutY="412.0" mnemonicParsing="false" onAction="#cliqueBotaoLoginPaciente" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: #39A7FF;" text="Paciente" textFill="WHITE">
-         <font>
-            <Font size="13.0" />
-         </font></Button>
-      <Text fill="#124991" layoutX="172.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fazer login como:">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="120.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/Captura_de_tela_2023-11-29_153411-removebg-preview.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="136.0" fitWidth="442.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/Captura_de_tela_2023-11-29_163037-removebg-preview.png" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="56.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Olá, seja bem vindo à Clínica Unity, onde sua saúde é nossa prioridade!" wrappingWidth="365.67755126953125">
-         <font>
-            <Font name="Leelawadee UI" size="14.0" />
-         </font>
-      </Text>
-   </children>
+	<children>
+		<Button fx:id="botaoLoginMedico" layoutX="188.0" layoutY="344.0" mnemonicParsing="false" onAction="#cliqueBotaoLoginMedico" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #39A7FF;" text="Médico" textFill="WHITE">
+			<font>
+				<Font size="13.0" />
+			</font>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="botaoLoginPaciente" layoutX="185.0" layoutY="390.0" mnemonicParsing="false" onAction="#cliqueBotaoLoginPaciente" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: #39A7FF;" text="Paciente" textFill="WHITE">
+			<font>
+				<Font size="13.0" />
+			</font>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Text fill="#124991" layoutX="162.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fazer login como:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Text>
+		<ImageView fitHeight="150.0" fitWidth="200.0" layoutX="120.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/nomelogo.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="136.0" fitWidth="442.0" layoutX="-1.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/bemvindo.png" />
+			</image>
+		</ImageView>
+		<Text fill="WHITE" layoutX="55.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Olá, seja bem vindo à Clínica Unity, onde sua saúde é nossa prioridade!" wrappingWidth="365.67755126953125">
+			<font>
+				<Font name="System Bold" size="16.0" />
+			</font>
+		</Text>
+	</children>
 </AnchorPane>

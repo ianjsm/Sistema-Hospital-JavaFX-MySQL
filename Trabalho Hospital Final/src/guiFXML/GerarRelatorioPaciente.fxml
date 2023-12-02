@@ -13,30 +13,31 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="624.0" style="-fx-background-color: #D2E0FB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.GerarRelatorioPacienteController">
-   <children>
-      <ChoiceBox fx:id="choiceBoxEscolha" layoutX="14.0" layoutY="195.0" prefWidth="150.0" />
-      <DatePicker fx:id="datePickerInicio" layoutX="212.0" layoutY="195.0" promptText="Inicio" />
-      <DatePicker fx:id="datePickerFinal" layoutX="212.0" layoutY="227.0" promptText="Fim" />
-      <Button fx:id="botaoGerarRelatorio" layoutX="483.0" layoutY="391.0" mnemonicParsing="false" onAction="#cliqueBotaoGerarRelatorio" style="-fx-background-color: #39A7FF;" text="GERAR RELATÓRIO" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <TableView fx:id="tableViewRelatorio" layoutX="118.0" layoutY="274.0" prefHeight="259.0" prefWidth="352.0">
-        <columns>
-          <TableColumn fx:id="colunaID" prefWidth="118.4000244140625" text="ID da Consulta" />
-          <TableColumn fx:id="colunaCRM" prefWidth="147.20001220703125" text="CRM do Médico" />
-            <TableColumn fx:id="ColunaData" prefWidth="84.0" text="Data" />
-        </columns>
-      </TableView>
-      <ImageView fitHeight="144.0" fitWidth="175.0" layoutX="212.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/nomelogo.png" />
-         </image>
-      </ImageView>
-      <Text fill="#124991" layoutX="14.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione:">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-   </children>
+	<children>
+		<ChoiceBox fx:id="choiceBoxEscolha" layoutX="14.0" layoutY="195.0" prefWidth="150.0" />
+		<DatePicker fx:id="datePickerInicio" layoutX="212.0" layoutY="195.0" promptText="Inicio" />
+		<DatePicker fx:id="datePickerFinal" layoutX="212.0" layoutY="227.0" promptText="Fim" />
+		<Button fx:id="botaoGerarRelatorio" layoutX="483.0" layoutY="391.0" mnemonicParsing="false" onAction="#cliqueBotaoGerarRelatorio" style="-fx-background-color: #39A7FF;" text="GERAR RELATÓRIO" textFill="WHITE">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<TableView fx:id="tableViewRelatorio" layoutX="118.0" layoutY="274.0" prefHeight="259.0" prefWidth="352.0">
+			<columns>
+				<TableColumn fx:id="colunaID" prefWidth="118.4000244140625" text="ID da Consulta" />
+				<TableColumn fx:id="colunaCRM" prefWidth="147.20001220703125" text="CRM do Médico" />
+				<TableColumn fx:id="ColunaData" prefWidth="84.0" text="Data" />
+			</columns>
+		</TableView>
+		<ImageView fitHeight="144.0" fitWidth="175.0" layoutX="212.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/nomelogo.png" />
+			</image>
+		</ImageView>
+		<Text fill="#124991" layoutX="14.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Text>
+	</children>
 </AnchorPane>

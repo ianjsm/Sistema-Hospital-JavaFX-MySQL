@@ -11,112 +11,120 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="600.0" style="-fx-background-color: #D2E0FB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.AvaliarMedicoController">
-   <children>
-      <Button fx:id="buttonRuim" layoutX="171.0" layoutY="209.0" mnemonicParsing="false" onAction="#setarEstrelasParaUm" onMouseEntered="#mouseRuim" onMouseExited="#limparLabel" prefHeight="40.0" prefWidth="23.0" style="-fx-background-color: #D2E0FB;">
-         <graphic>
-            <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../Downloads/estrela.png" />
-               </image>
-            </ImageView>
-         </graphic>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="buttonRegular" layoutX="225.0" layoutY="213.0" mnemonicParsing="false" onAction="#setarEstrelasParaDois" onMouseEntered="#mouseRegular" onMouseExited="#limparLabel" style="-fx-background-color: #D2E0FB;">
-         <graphic>
-            <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../Downloads/estrela.png" />
-               </image>
-            </ImageView>
-         </graphic>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="buttonBom" layoutX="279.0" layoutY="213.0" mnemonicParsing="false" onAction="#setarEstrelasParaTres" onMouseEntered="#mouseBom" onMouseExited="#limparLabel" style="-fx-background-color: #D2E0FB;">
-         <graphic>
-            <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../Downloads/estrela.png" />
-               </image>
-            </ImageView>
-         </graphic>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="buttonMuitoBom" layoutX="334.0" layoutY="213.0" mnemonicParsing="false" onAction="#setarEstrelasParaQuatro" onMouseEntered="#mouseMuitoBom" onMouseExited="#limparLabel" style="-fx-background-color: #D2E0FB;">
-         <graphic>
-            <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../Downloads/estrela.png" />
-               </image>
-            </ImageView>
-         </graphic>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="buttonPerfeito" layoutX="387.0" layoutY="213.0" mnemonicParsing="false" onAction="#setarEstrelasParaCinco" onMouseEntered="#mousePerfeito" onMouseExited="#limparLabel" style="-fx-background-color: #D2E0FB;">
-         <graphic>
-            <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../Downloads/estrela.png" />
-               </image>
-            </ImageView>
-         </graphic>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Label fx:id="labelRuim" layoutX="66.0" layoutY="107.0" />
-      <Label fx:id="labelRegular" layoutX="105.0" layoutY="107.0" />
-      <Label fx:id="labelBom" layoutX="142.0" layoutY="107.0" />
-      <Label fx:id="labelMuitoBom" layoutX="181.0" layoutY="107.0" />
-      <Label fx:id="labelPerfeito" layoutX="235.0" layoutY="107.0" />
-      <Label fx:id="labelPessimo" layoutX="24.0" layoutY="107.0" />
-      <Button fx:id="botaoEnviarAvaliacao" layoutX="237.0" layoutY="482.0" mnemonicParsing="false" onAction="#avaliacao" style="-fx-background-color: #39A7FF;" text="ENVIAR AVALIAÇÃO" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <TextArea fx:id="textAreaTextoAvaliacao" layoutX="18.0" layoutY="335.0" prefHeight="128.0" prefWidth="556.0" promptText="Conte-nos sobre sua experiência!">
-         <font>
-            <Font size="13.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="DEFAULT" />
-         </cursor></TextArea>
-      <Text fill="#124991" layoutX="93.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sua opinião é muito importante para nós! Avalie sua consulta:" wrappingWidth="413.1533203125">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="46.0" fitWidth="41.0" layoutX="24.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/Consultas%20(5).png" />
-         </image>
-      </ImageView>
-      <Text layoutX="73.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escreva aqui sobre sua experiência:">
-         <font>
-            <Font size="14.0" />
-         </font></Text>
-      <ImageView fitHeight="114.0" fitWidth="148.0" layoutX="215.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/nomelogo.png" />
-         </image>
-      </ImageView>
-      <Text layoutX="189.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
-      <Text layoutX="243.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
-      <Text layoutX="296.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
-      <Text layoutX="352.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
-      <Text layoutX="405.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
-      <ImageView fitHeight="18.0" fitWidth="21.0" layoutX="142.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/sad-face.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="18.0" fitWidth="21.0" layoutX="442.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/smile.png" />
-         </image>
-      </ImageView>
-   </children>
+	<children>
+		<Button fx:id="buttonRuim" layoutX="171.0" layoutY="209.0" mnemonicParsing="false" onAction="#setarEstrelasParaUm" onMouseEntered="#mouseRuim" onMouseExited="#limparLabel" prefHeight="40.0" prefWidth="23.0" style="-fx-background-color: #D2E0FB;">
+			<graphic>
+				<ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Downloads/estrela.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="buttonRegular" layoutX="225.0" layoutY="213.0" mnemonicParsing="false" onAction="#setarEstrelasParaDois" onMouseEntered="#mouseRegular" onMouseExited="#limparLabel" style="-fx-background-color: #D2E0FB;">
+			<graphic>
+				<ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Downloads/estrela.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="buttonBom" layoutX="279.0" layoutY="213.0" mnemonicParsing="false" onAction="#setarEstrelasParaTres" onMouseEntered="#mouseBom" onMouseExited="#limparLabel" style="-fx-background-color: #D2E0FB;">
+			<graphic>
+				<ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Downloads/estrela.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="buttonMuitoBom" layoutX="334.0" layoutY="213.0" mnemonicParsing="false" onAction="#setarEstrelasParaQuatro" onMouseEntered="#mouseMuitoBom" onMouseExited="#limparLabel" style="-fx-background-color: #D2E0FB;">
+			<graphic>
+				<ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Downloads/estrela.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="buttonPerfeito" layoutX="387.0" layoutY="213.0" mnemonicParsing="false" onAction="#setarEstrelasParaCinco" onMouseEntered="#mousePerfeito" onMouseExited="#limparLabel" style="-fx-background-color: #D2E0FB;">
+			<graphic>
+				<ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Downloads/estrela.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Label fx:id="labelRuim" layoutX="180.0" layoutY="205.0" />
+		<Label fx:id="labelRegular" layoutX="227.0" layoutY="205.0" />
+		<Label fx:id="labelBom" layoutX="290.0" layoutY="205.0" />
+		<Label fx:id="labelMuitoBom" layoutX="339.0" layoutY="205.0" />
+		<Label fx:id="labelPerfeito" layoutX="383.0" layoutY="205.0" />
+		<Label fx:id="labelPessimo" layoutX="24.0" layoutY="107.0" />
+		<Button fx:id="botaoEnviarAvaliacao" layoutX="237.0" layoutY="482.0" mnemonicParsing="false" onAction="#avaliacao" style="-fx-background-color: #39A7FF;" text="ENVIAR AVALIAÇÃO" textFill="WHITE">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<TextArea fx:id="textAreaTextoAvaliacao" layoutX="18.0" layoutY="335.0" prefHeight="128.0" prefWidth="556.0" promptText="Conte-nos sobre sua experiência!">
+			<font>
+				<Font size="13.0" />
+			</font>
+			<cursor>
+				<Cursor fx:constant="DEFAULT" />
+			</cursor>
+		</TextArea>
+		<Text fill="#124991" layoutX="93.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sua opinião é muito importante para nós! Avalie sua consulta:" wrappingWidth="413.1533203125">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Text>
+		<ImageView fitHeight="46.0" fitWidth="41.0" layoutX="24.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/Consultas%20(5).png" />
+			</image>
+		</ImageView>
+		<Text layoutX="73.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escreva aqui sobre sua experiência:">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Text>
+		<ImageView fitHeight="114.0" fitWidth="148.0" layoutX="215.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/nomelogo.png" />
+			</image>
+		</ImageView>
+		<Text layoutX="189.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+		<Text layoutX="243.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+		<Text layoutX="296.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+		<Text layoutX="352.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+		<Text layoutX="405.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+		<ImageView fitHeight="18.0" fitWidth="21.0" layoutX="142.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/sad-face.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="18.0" fitWidth="21.0" layoutX="442.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/smile.png" />
+			</image>
+		</ImageView>
+	</children>
 </AnchorPane>

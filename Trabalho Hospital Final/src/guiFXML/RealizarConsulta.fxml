@@ -12,52 +12,57 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="674.0" style="-fx-background-color: #D2E0FB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.RealizarConsultaController">
-   <children>
-      <Label layoutX="120.0" layoutY="146.0" text="SINTOMAS" textFill="#124991">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font></Label>
-      <TextArea fx:id="textAreaSintomas" layoutX="42.0" layoutY="172.0" prefHeight="150.0" prefWidth="214.0" />
-      <TextArea fx:id="textAreaTratamento" layoutX="43.0" layoutY="398.0" prefHeight="150.0" prefWidth="214.0" />
-      <TextArea fx:id="textAreaMedicamentos" layoutX="286.0" layoutY="172.0" prefHeight="150.0" prefWidth="214.0" />
-      <TextArea fx:id="textAreaExames" layoutX="286.0" layoutY="398.0" prefHeight="150.0" prefWidth="214.0" />
-      <Label layoutX="104.0" layoutY="375.0" text="TRATAMENTO" textFill="#124991">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font></Label>
-      <Label layoutX="341.0" layoutY="146.0" text="MEDICAMENTOS" textFill="#124991">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font></Label>
-      <Label layoutX="362.0" layoutY="375.0" text="EXAMES" textFill="#124991">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font></Label>
-      <Button fx:id="botaoFinalizarConsulta" layoutX="523.0" layoutY="434.0" mnemonicParsing="false" onAction="#cliqueBotaoFinalizarConsulta" style="-fx-background-color: #39A7FF;" text="FINALIZAR CONSULTA" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <TextField fx:id="textFieldPreco" layoutX="523.0" layoutY="322.0" prefHeight="38.0" prefWidth="122.0" promptText="R$" />
-      <ImageView fitHeight="90.0" fitWidth="103.0" layoutX="516.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/logo.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="26.0" fitWidth="175.0" layoutX="362.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/clinica.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="157.0" fitWidth="308.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Downloads/CONSULTA%20(1).png" />
-         </image>
-      </ImageView>
-      <Text fill="#124991" layoutX="532.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VALOR A PAGAR">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Text>
-   </children>
+	<children>
+		<Label layoutX="120.0" layoutY="146.0" text="SINTOMAS" textFill="#124991">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+		</Label>
+		<TextArea fx:id="textAreaSintomas" layoutX="42.0" layoutY="172.0" prefHeight="150.0" prefWidth="214.0" />
+		<TextArea fx:id="textAreaTratamento" layoutX="43.0" layoutY="398.0" prefHeight="150.0" prefWidth="214.0" />
+		<TextArea fx:id="textAreaMedicamentos" layoutX="286.0" layoutY="172.0" prefHeight="150.0" prefWidth="214.0" />
+		<TextArea fx:id="textAreaExames" layoutX="286.0" layoutY="398.0" prefHeight="150.0" prefWidth="214.0" />
+		<Label layoutX="104.0" layoutY="375.0" text="TRATAMENTO" textFill="#124991">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+		</Label>
+		<Label layoutX="341.0" layoutY="146.0" text="MEDICAMENTOS" textFill="#124991">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+		</Label>
+		<Label layoutX="362.0" layoutY="375.0" text="EXAMES" textFill="#124991">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+		</Label>
+		<Button fx:id="botaoFinalizarConsulta" layoutX="516.0" layoutY="394.0" mnemonicParsing="false" onAction="#cliqueBotaoFinalizarConsulta" style="-fx-background-color: #39A7FF;" text="FINALIZAR CONSULTA" textFill="WHITE">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<TextField fx:id="textFieldPreco" layoutX="523.0" layoutY="322.0" prefHeight="38.0" prefWidth="122.0" promptText="R$" />
+		<ImageView fitHeight="90.0" fitWidth="103.0" layoutX="516.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/logo.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="26.0" fitWidth="175.0" layoutX="362.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/clinica.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="157.0" fitWidth="308.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Downloads/CONSULTA%20(1).png" />
+			</image>
+		</ImageView>
+		<Text fill="#124991" layoutX="532.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VALOR A PAGAR">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+		</Text>
+		<Label fx:id="labelMensagem" layoutX="518.0" layoutY="456.0" />
+	</children>
 </AnchorPane>
