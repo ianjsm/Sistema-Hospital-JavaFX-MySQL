@@ -21,7 +21,7 @@
 				<Cursor fx:constant="HAND" />
 			</cursor>
 		</Button>
-		<Label fx:id="labelMensagem" layoutX="286.0" layoutY="291.0" />
+		<Label fx:id="labelMensagem" layoutX="126.0" layoutY="442.0" />
 		<TextField fx:id="textFieldSenha" layoutX="140.0" layoutY="349.0" promptText="Senha" />
 		<TextField fx:id="textFieldCPF" layoutX="140.0" layoutY="195.0" promptText="CPF" />
 		<CheckBox fx:id="checkBoxPlano" layoutX="145.0" layoutY="293.0" mnemonicParsing="false" text="Possui plano de saúde" />

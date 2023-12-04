@@ -17,13 +17,13 @@
 				<Cursor fx:constant="HAND" />
 			</cursor>
 		</ComboBox>
-		<Button fx:id="botaoCancelamento" layoutX="197.0" layoutY="310.0" mnemonicParsing="false" onAction="#cliqueBotaoCancelar" style="-fx-background-color: #39A7FF;" text="CANCELAR CONSULTA" textFill="WHITE">
+		<Button fx:id="botaoCancelamento" layoutX="197.0" layoutY="288.0" mnemonicParsing="false" onAction="#cliqueBotaoCancelar" style="-fx-background-color: #39A7FF;" text="CANCELAR CONSULTA" textFill="WHITE">
 			<cursor>
 				<Cursor fx:constant="HAND" />
 			</cursor>
 		</Button>
-		<Label fx:id="labelMensagem" layoutX="272.0" layoutY="173.0" />
-		<Text fill="#124991" layoutX="140.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escolha a consulta que será cancelada:">
+		<Label fx:id="labelMensagem" layoutX="175.0" layoutY="335.0" />
+		<Text fill="#124991" layoutX="139.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escolha a consulta que será cancelada:">
 			<font>
 				<Font name="System Bold" size="14.0" />
 			</font>

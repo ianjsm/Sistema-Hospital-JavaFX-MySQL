@@ -20,7 +20,7 @@
 				<Cursor fx:constant="HAND" />
 			</cursor>
 		</Button>
-		<Label fx:id="labelMensagem" layoutX="140.0" layoutY="440.0" />
+		<Label fx:id="labelMensagem" layoutX="94.0" layoutY="440.0" />
 		<TextField fx:id="textFieldSenha" layoutX="134.0" layoutY="319.0" promptText="Senha" />
 		<TextField fx:id="textFieldCRM" layoutX="134.0" layoutY="355.0" promptText="CRM" />
 		<Text fill="#124991" layoutX="32.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para cadastrar um médico, preencha os campos abaixo:">

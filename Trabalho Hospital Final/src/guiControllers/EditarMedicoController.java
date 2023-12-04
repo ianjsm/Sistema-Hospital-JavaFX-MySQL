@@ -54,14 +54,14 @@ public class EditarMedicoController {
 				int rowsAffected = preparedStatement.executeUpdate();
 
 				if (rowsAffected > 0) {
-					labelMensagem.setText("Cadastro realizado com sucesso!");
+					labelMensagem.setText("Edição realizada com sucesso!");
 				} else {
-					labelMensagem.setText("Falha ao cadastrar.");
+					labelMensagem.setText("Falha ao editar.");
 				}
 
 			} catch (SQLException e) {
 				e.printStackTrace();
-				labelMensagem.setText("Erro ao realizar o cadastro.");
+				labelMensagem.setText("Erro ao editar.");
 			}
 			return;
 		}
@@ -77,14 +77,14 @@ public class EditarMedicoController {
 				int rowsAffected = preparedStatement.executeUpdate();
 
 				if (rowsAffected > 0) {
-					labelMensagem.setText("Cadastro realizado com sucesso!");
+					labelMensagem.setText("Edição realizada com sucesso!");
 				} else {
-					labelMensagem.setText("Falha ao cadastrar.");
+					labelMensagem.setText("Falha ao editar.");
 				}
 
 			} catch (SQLException e) {
 				e.printStackTrace();
-				labelMensagem.setText("Erro ao realizar o cadastro.");
+				labelMensagem.setText("Erro ao realizar edição.");
 			}
 			return;
 		}
@@ -99,14 +99,14 @@ public class EditarMedicoController {
 				int rowsAffected = preparedStatement.executeUpdate();
 
 				if (rowsAffected > 0) {
-					labelMensagem.setText("Cadastro realizado com sucesso!");
+					labelMensagem.setText("Edição realizada com sucesso!");
 				} else {
-					labelMensagem.setText("Falha ao cadastrar.");
+					labelMensagem.setText("Falha ao editar.");
 				}
 
 			} catch (SQLException e) {
 				e.printStackTrace();
-				labelMensagem.setText("Erro ao realizar o cadastro.");
+				labelMensagem.setText("Erro ao realizar edição.");
 			}
 			return;
 		}
@@ -121,14 +121,14 @@ public class EditarMedicoController {
 				int rowsAffected = preparedStatement.executeUpdate();
 
 				if (rowsAffected > 0) {
-					labelMensagem.setText("Cadastro realizado com sucesso!");
+					labelMensagem.setText("Edição realizada com sucesso!");
 				} else {
-					labelMensagem.setText("Falha ao cadastrar.");
+					labelMensagem.setText("Falha ao editar.");
 				}
 
 			} catch (SQLException e) {
 				e.printStackTrace();
-				labelMensagem.setText("Erro ao realizar o cadastro.");
+				labelMensagem.setText("Erro ao realizar edição.");
 			}
 			return;
 		}
@@ -143,14 +143,14 @@ public class EditarMedicoController {
 				int rowsAffected = preparedStatement.executeUpdate();
 
 				if (rowsAffected > 0) {
-					labelMensagem.setText("Cadastro realizado com sucesso!");
+					labelMensagem.setText("Edição realizada com sucesso!");
 				} else {
-					labelMensagem.setText("Falha ao cadastrar.");
+					labelMensagem.setText("Falha ao editar.");
 				}
 
 			} catch (SQLException e) {
 				e.printStackTrace();
-				labelMensagem.setText("Erro ao realizar o cadastro.");
+				labelMensagem.setText("Erro ao realizar edição.");
 			}
 			return;
 		}
