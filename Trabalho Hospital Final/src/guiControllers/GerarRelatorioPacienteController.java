@@ -105,7 +105,7 @@ public class GerarRelatorioPacienteController {
 			String username = "developer";
 			String password = "86779791";
 
-			String selectQuery = "SELECT * FROM consultas WHERE cpf_paciente = ? AND realizada = ? AND dataConsulta BETWEEN ? AND ? ";
+			 String selectQuery = "SELECT idConsulta, crm_Medico, dataConsulta FROM consultas WHERE cpf_paciente = ? AND realizada = ? AND dataConsulta BETWEEN ? AND ? ";
 			try (Connection connection = DriverManager.getConnection(url, username, password);
 					PreparedStatement preparedStatement = connection.prepareStatement(selectQuery)) {
 
@@ -119,7 +119,7 @@ public class GerarRelatorioPacienteController {
 						int id = resultSet.getInt("idConsulta");
 						String crm = resultSet.getString("crm_Medico");
 						Date data = resultSet.getDate("dataConsulta");
-						Consulta consulta = new Consulta(id, crm, data);
+						Consulta consulta = new Consulta(id, crm, null, data);
 						lista.add(consulta);
 					}
 					tableViewRelatorio.setItems(lista);

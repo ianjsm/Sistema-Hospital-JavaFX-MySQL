@@ -47,11 +47,12 @@ public class PesquisarMedicosController {
 		try {
 			if (TelaLoginPacienteController.getPlanoLogado() == null) {
 				System.out.println("NULO");
-				selectQuery = "SELECT crm_Medico, AVG(estrelas) AS notaMedia FROM consultasrealizadas GROUP BY crm_Medico";
+				selectQuery = "SELECT crm_Medico, textoAvaliacao, AVG(estrelas) AS notaMedia FROM consultasrealizadas GROUP BY crm_Medico";
 
 				connection = DriverManager.getConnection(url, username, password);
 
 				Map<String, Double> notaMediaMap = new HashMap<>();
+				Map<String, List<String>> comentariosMap = new HashMap<>();
 
 				try (PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
 						ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -59,8 +60,12 @@ public class PesquisarMedicosController {
 					while (resultSet.next()) {
 						String crmMedico = resultSet.getString("crm_Medico");
 						double notaMedia = resultSet.getDouble("notaMedia");
+						String comentario = resultSet.getString("textoAvaliacao");
 
-						// Store average ratings in the map using doctor's CRM as the key
+						List<String> listaComentarios = comentariosMap.computeIfAbsent(crmMedico,
+								k -> new ArrayList<>());
+						listaComentarios.add(comentario);
+
 						notaMediaMap.put(crmMedico, notaMedia);
 					}
 				}
@@ -77,14 +82,16 @@ public class PesquisarMedicosController {
 							String nomeMedico = resultSetDetails.getString("nome");
 							String especialidadeMedico = resultSetDetails.getString("especialidade");
 
-							// Get the average rating from the map using the crm_Medico
 							double notaMedia = notaMediaMap.getOrDefault(crm, 0.0);
+							List<String> listaComentarios = comentariosMap.getOrDefault(crm, new ArrayList<>());
+
 							String StringNotaMedia = String.format("%.1f", notaMedia);
 							String nomeEspecialidade = nomeMedico + " - " + especialidadeMedico + " - "
-									+ StringNotaMedia;
+									+ StringNotaMedia + " - " + String.join(", ", listaComentarios);
 
 							listaMedicos.add(nomeEspecialidade);
 						}
+						System.out.println("A LISTA DE MEDICOS EH: " + listaMedicos);
 						listViewResultados.getItems().setAll(listaMedicos);
 					} catch (SQLException e) {
 						e.printStackTrace();
@@ -93,12 +100,13 @@ public class PesquisarMedicosController {
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
-			}  else if (choiceBoxEscolha.getValue().equals("Nome")) {
-				selectQuery = "SELECT crm_Medico, AVG(estrelas) AS notaMedia FROM consultasrealizadas GROUP BY crm_Medico";
+			} else if (choiceBoxEscolha.getValue().equals("Nome")) {
+				selectQuery = "SELECT crm_Medico, textoAvaliacao, AVG(estrelas) AS notaMedia FROM consultasrealizadas GROUP BY crm_Medico";
 
 				connection = DriverManager.getConnection(url, username, password);
 
 				Map<String, Double> notaMediaMap = new HashMap<>();
+				Map<String, List<String>> comentariosMap1 = new HashMap<>();
 
 				try (PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
 						ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -106,8 +114,11 @@ public class PesquisarMedicosController {
 					while (resultSet.next()) {
 						String crmMedico = resultSet.getString("crm_Medico");
 						double notaMedia = resultSet.getDouble("notaMedia");
+						String comentario = resultSet.getString("textoAvaliacao");
+						List<String> listaComentarios1 = comentariosMap1.computeIfAbsent(crmMedico,
+								k -> new ArrayList<>());
+						listaComentarios1.add(comentario);
 
-						// Store average ratings in the map using doctor's CRM as the key
 						notaMediaMap.put(crmMedico, notaMedia);
 					}
 				}
@@ -124,11 +135,11 @@ public class PesquisarMedicosController {
 							String nomeMedico = resultSetDetails.getString("nome");
 							String especialidadeMedico = resultSetDetails.getString("especialidade");
 
-							// Get the average rating from the map using the crm_Medico
 							double notaMedia = notaMediaMap.getOrDefault(crm, 0.0);
+							List<String> listaComentarios1 = comentariosMap1.getOrDefault(crm, new ArrayList<>());
 							String StringNotaMedia = String.format("%.1f", notaMedia);
 							String nomeEspecialidade = nomeMedico + " - " + especialidadeMedico + " - "
-									+ StringNotaMedia;
+									+ StringNotaMedia + " - " + String.join(", ", listaComentarios1);
 
 							listaMedicos.add(nomeEspecialidade);
 						}
@@ -140,12 +151,13 @@ public class PesquisarMedicosController {
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
-			}else if (choiceBoxEscolha.getValue().equals("Especialidade")) {
-				selectQuery = "SELECT crm_Medico, AVG(estrelas) AS notaMedia FROM consultasrealizadas GROUP BY crm_Medico";
+			} else if (choiceBoxEscolha.getValue().equals("Especialidade")) {
+				selectQuery = "SELECT crm_Medico, textoAvaliacao, AVG(estrelas) AS notaMedia FROM consultasrealizadas GROUP BY crm_Medico";
 
 				connection = DriverManager.getConnection(url, username, password);
 
 				Map<String, Double> notaMediaMap = new HashMap<>();
+				Map<String, List<String>> comentariosMap2 = new HashMap<>();
 
 				try (PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
 						ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -153,8 +165,11 @@ public class PesquisarMedicosController {
 					while (resultSet.next()) {
 						String crmMedico = resultSet.getString("crm_Medico");
 						double notaMedia = resultSet.getDouble("notaMedia");
+						String comentario = resultSet.getString("textoAvaliacao");
+						List<String> listaComentarios2 = comentariosMap2.computeIfAbsent(crmMedico,
+								k -> new ArrayList<>());
+						listaComentarios2.add(comentario);
 
-						// Store average ratings in the map using doctor's CRM as the key
 						notaMediaMap.put(crmMedico, notaMedia);
 					}
 				}
@@ -171,11 +186,11 @@ public class PesquisarMedicosController {
 							String nomeMedico = resultSetDetails.getString("nome");
 							String especialidadeMedico = resultSetDetails.getString("especialidade");
 
-							// Get the average rating from the map using the crm_Medico
 							double notaMedia = notaMediaMap.getOrDefault(crm, 0.0);
+							List<String> listaComentarios2 = comentariosMap2.getOrDefault(crm, new ArrayList<>());
 							String StringNotaMedia = String.format("%.1f", notaMedia);
 							String nomeEspecialidade = nomeMedico + " - " + especialidadeMedico + " - "
-									+ StringNotaMedia;
+									+ StringNotaMedia + " - " + String.join(", ", listaComentarios2);
 
 							listaMedicos.add(nomeEspecialidade);
 						}
@@ -188,11 +203,9 @@ public class PesquisarMedicosController {
 					e.printStackTrace();
 				}
 			}
-
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// Close the connection in the finally block
 			if (connection != null) {
 				try {
 					connection.close();
