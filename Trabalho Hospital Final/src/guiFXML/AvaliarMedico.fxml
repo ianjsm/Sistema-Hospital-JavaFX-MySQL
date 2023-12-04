@@ -78,7 +78,7 @@
 		<Label fx:id="labelMuitoBom" layoutX="339.0" layoutY="205.0" />
 		<Label fx:id="labelPerfeito" layoutX="383.0" layoutY="205.0" />
 		<Label fx:id="labelPessimo" layoutX="24.0" layoutY="107.0" />
-		<Button fx:id="botaoEnviarAvaliacao" layoutX="237.0" layoutY="482.0" mnemonicParsing="false" onAction="#avaliacao" style="-fx-background-color: #39A7FF;" text="ENVIAR AVALIAÇÃO" textFill="WHITE">
+		<Button fx:id="botaoEnviarAvaliacao" layoutX="237.0" layoutY="472.0" mnemonicParsing="false" onAction="#avaliacao" style="-fx-background-color: #39A7FF;" text="ENVIAR AVALIAÇÃO" textFill="WHITE">
 			<cursor>
 				<Cursor fx:constant="HAND" />
 			</cursor>
@@ -126,5 +126,6 @@
 				<Image url="@../../../../../Downloads/smile.png" />
 			</image>
 		</ImageView>
+      <Label fx:id="labelMensagem" layoutX="186.0" layoutY="510.0" />
 	</children>
 </AnchorPane>

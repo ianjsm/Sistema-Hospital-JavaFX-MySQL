@@ -85,12 +85,12 @@ public class PesquisarMedicosController {
 							List<String> listaComentarios = comentariosMap.getOrDefault(crm, new ArrayList<>());
 
 							String StringNotaMedia = String.format("%.1f", notaMedia);
-							String nomeEspecialidade = nomeMedico + " - " + especialidadeMedico + " - "
-									+ StringNotaMedia + " - " + String.join(", ", listaComentarios);
+							String nomeEspecialidade = "Nome: " + nomeMedico + " - " + "Especialidade: "
+									+ especialidadeMedico + " - " + "Nota média: " + StringNotaMedia + " - "
+									+ "Comentários: " + String.join(", ", listaComentarios);
 
 							listaMedicos.add(nomeEspecialidade);
 						}
-						System.out.println("A LISTA DE MEDICOS EH: " + listaMedicos);
 						listViewResultados.getItems().setAll(listaMedicos);
 					} catch (SQLException e) {
 						e.printStackTrace();
@@ -136,8 +136,9 @@ public class PesquisarMedicosController {
 							double notaMedia = notaMediaMap.getOrDefault(crm, 0.0);
 							List<String> listaComentarios1 = comentariosMap1.getOrDefault(crm, new ArrayList<>());
 							String StringNotaMedia = String.format("%.1f", notaMedia);
-							String nomeEspecialidade = nomeMedico + " - " + especialidadeMedico + " - "
-									+ StringNotaMedia + " - " + String.join(", ", listaComentarios1);
+							String nomeEspecialidade = "Nome: " + nomeMedico + " - " + "Especialidade: "
+									+ especialidadeMedico + " - " + "Nota média: " + StringNotaMedia + " - "
+									+ "Comentários: " + String.join(", ", listaComentarios1);
 
 							listaMedicos.add(nomeEspecialidade);
 						}
@@ -186,8 +187,9 @@ public class PesquisarMedicosController {
 							double notaMedia = notaMediaMap.getOrDefault(crm, 0.0);
 							List<String> listaComentarios2 = comentariosMap2.getOrDefault(crm, new ArrayList<>());
 							String StringNotaMedia = String.format("%.1f", notaMedia);
-							String nomeEspecialidade = nomeMedico + " - " + especialidadeMedico + " - "
-									+ StringNotaMedia + " - " + String.join(", ", listaComentarios2);
+							String nomeEspecialidade = "Nome: " + nomeMedico + " - " + "Especialidade: "
+									+ especialidadeMedico + " - " + "Nota média: " + StringNotaMedia + " - "
+									+ "Comentários: " + String.join(", ", listaComentarios2);
 
 							listaMedicos.add(nomeEspecialidade);
 						}
