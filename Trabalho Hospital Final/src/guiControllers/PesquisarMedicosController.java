@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -95,7 +94,6 @@ public class PesquisarMedicosController {
 						listViewResultados.getItems().setAll(listaMedicos);
 					} catch (SQLException e) {
 						e.printStackTrace();
-						// alert erro
 					}
 				} catch (SQLException e) {
 					e.printStackTrace();
@@ -146,7 +144,6 @@ public class PesquisarMedicosController {
 						listViewResultados.getItems().setAll(listaMedicos);
 					} catch (SQLException e) {
 						e.printStackTrace();
-						// alert erro
 					}
 				} catch (SQLException e) {
 					e.printStackTrace();
@@ -197,7 +194,6 @@ public class PesquisarMedicosController {
 						listViewResultados.getItems().setAll(listaMedicos);
 					} catch (SQLException e) {
 						e.printStackTrace();
-						// alert erro
 					}
 				} catch (SQLException e) {
 					e.printStackTrace();

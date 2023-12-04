@@ -67,7 +67,7 @@ public class MenuPacienteController {
 			Parent root = loader.load();
 
 			Stage stage = new Stage();
-			stage.setTitle("Agendar consulta");
+			stage.setTitle("Edição de dados do paciente");
 
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
@@ -84,7 +84,7 @@ public class MenuPacienteController {
 			Parent root = loader.load();
 
 			Stage stage = new Stage();
-			stage.setTitle("Agendar consulta");
+			stage.setTitle("Pesquisar médicos");
 
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
@@ -101,7 +101,7 @@ public class MenuPacienteController {
 			Parent root = loader.load();
 
 			Stage stage = new Stage();
-			stage.setTitle("Relatórios");
+			stage.setTitle("Gerar relatórios");
 
 			Scene scene = new Scene(root);
 			stage.setScene(scene);

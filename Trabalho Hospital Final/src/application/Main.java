@@ -13,7 +13,6 @@ public class Main extends Application {
 		try {
 			Parent parent = FXMLLoader.load(getClass().getResource("/guiFXML/MenuPrincipal.fxml"));
 			Scene scene = new Scene(parent);
-			// fazendo assim, dá pra adicionar o CSS sem ficar precisando repetir o código
 			String css = this.getClass().getResource("application.css").toExternalForm();
 			scene.getStylesheets().add(css);
 			stage.setTitle("Sistema do Hospital");

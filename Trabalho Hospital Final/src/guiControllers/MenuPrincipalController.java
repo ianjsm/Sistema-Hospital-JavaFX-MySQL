@@ -54,7 +54,7 @@ public class MenuPrincipalController {
 			Parent root = loader.load();
 
 			Stage stage = new Stage();
-			stage.setTitle("LOGIN MÉDICO");
+			stage.setTitle("Login médico");
 
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
@@ -71,7 +71,7 @@ public class MenuPrincipalController {
 			Parent root = loader.load();
 
 			Stage stage = new Stage();
-			stage.setTitle("LOGIN DO PACIENTE");
+			stage.setTitle("Login paciente");
 
 			Scene scene = new Scene(root);
 			stage.setScene(scene);

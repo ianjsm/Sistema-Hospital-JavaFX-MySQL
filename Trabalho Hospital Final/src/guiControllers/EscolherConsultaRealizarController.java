@@ -79,7 +79,7 @@ public class EscolherConsultaRealizarController {
 			Parent root = loader.load();
 
 			Stage stage = new Stage();
-			stage.setTitle("Consulta");
+			stage.setTitle("Realização de consulta");
 
 			Scene scene = new Scene(root);
 			stage.setScene(scene);

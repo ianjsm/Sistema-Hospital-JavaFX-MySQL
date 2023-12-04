@@ -87,7 +87,7 @@ public class TelaLoginMedicoController {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/guiFXML/MenuMedico.fxml"));
 			Parent root = loader.load();
 			Stage stage = new Stage();
-			stage.setTitle("Tela de Operações");
+			stage.setTitle("Menu do médico");
 			Scene scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
