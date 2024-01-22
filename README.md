@@ -6,7 +6,7 @@ Este repositório contém a implementação do Sistema de Consultas Médicas. O 
 
 Assista a uma demonstração do Sistema de Consultas Médicas no YouTube:
 
-[![Demonstração do Sistema de Consultas Médicas](https://youtu.be/Q6eG1YkQpwg)](https://youtu.be/Q6eG1YkQpwg)
+[![Demonstração do Sistema de Consultas Médicas](https://youtu.be/Q6eG1YkQpwg).
 
 ## Funcionalidades Implementadas
 
