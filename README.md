@@ -2,6 +2,12 @@
 
 Este repositório contém a implementação do Sistema de Consultas Médicas. O sistema é destinado a facilitar a gestão de consultas médicas, permitindo que médicos e pacientes realizem operações específicas de forma eficiente. Foi utilizado no desenvolvimento do projeto um sistema de interface gráfica (JavaFX) e banco de dados (MySQL).
 
+## Demonstração do Sistema de Consultas Médicas
+
+Assista a uma demonstração do Sistema de Consultas Médicas no YouTube:
+
+[![Demonstração do Sistema de Consultas Médicas](https://youtu.be/Q6eG1YkQpwg/maxresdefault.jpg)](https://youtu.be/Q6eG1YkQpwg)
+
 ## Funcionalidades Implementadas
 
 1. **Login de Médico e Paciente:**
